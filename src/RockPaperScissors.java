@@ -9,6 +9,10 @@ public class RockPaperScissors {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String anotherGame = "";
+        int gamesPlayed=0;
+        int playersWins=0;
+        int computersWins=0;
+        int drawGames=0;
         do {
             System.out.print("Choose [R]ock, [P]aper, or [S]cissors ");
             String playersChoice = scanner.nextLine();
@@ -41,31 +45,42 @@ public class RockPaperScissors {
                 case ROCK:
                     if (computersChoice.equals(ROCK)) {
                         System.out.println("The game is draw.");
+                        drawGames++;
                     } else if (computersChoice.equals(SCISSORS)) {
                         System.out.println("You WIN!!! :)");
+                        playersWins++;
                     } else {
                         System.out.println("You lose. Sorry!");
+                        computersWins++;
                     }
                     break;
                 case SCISSORS:
                     if (computersChoice.equals(ROCK)) {
                         System.out.println("You lose. Sorry!");
+                        computersWins++;
                     } else if (computersChoice.equals(SCISSORS)) {
                         System.out.println("The game is draw.");
+                        drawGames++;
                     } else {
                         System.out.println("You WIN!!! :)");
+                        playersWins++;
                     }
                     break;
                 case PAPER:
                     if (computersChoice.equals(ROCK)) {
                         System.out.println("You WIN!!! :)");
+                        playersWins++;
                     } else if (computersChoice.equals(SCISSORS)) {
                         System.out.println("You lose. Sorry!");
+                        computersWins++;
                     } else {
                         System.out.println("The game is draw.");
+                        drawGames++;
                     }
                     break;
             }
+            gamesPlayed++;
+            System.out.printf("Game stats: Wins %d, Loses %d, Draws %d\n",playersWins,computersWins,drawGames);
             System.out.println("Would you like another game? y/n ");
             anotherGame = scanner.nextLine();
         } while (anotherGame.equalsIgnoreCase("y"));
