@@ -80,7 +80,8 @@ public class RockPaperScissors {
                     break;
             }
             gamesPlayed++;
-            System.out.printf("Game stats: Wins %d, Loses %d, Draws %d\n",playersWins,computersWins,drawGames);
+            System.out.printf("  Game stats:\n        Wins: %d\n       Loses: %d\n       Draws: %d\n",playersWins,computersWins,drawGames);
+            System.out.printf("Games played: %d\n",gamesPlayed);
             System.out.println("Would you like another game? y/n ");
             anotherGame = scanner.nextLine();
         } while (anotherGame.equalsIgnoreCase("y"));
