@@ -16,4 +16,9 @@ Depending on the comparison, it increments the respective counters for player wi
 After each round, the game statistics are updated, and the user is presented with the outcome and the current statistics. 
 The user is then asked if they want to play another game. If the answer is "yes," the loop continues; otherwise, the program terminates.
 
+**#screenshot**
+
+![image](https://github.com/roskonenov/RockPaperScissorsByRosko/assets/133804876/ed450501-50e7-435a-a1d5-48858f4bd5f2)
+
+
 #Source code link: [view code](https://github.com/roskonenov/RockPaperScissorsByRosko/blob/main/src/RockPaperScissors.java)
