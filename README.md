@@ -1,7 +1,7 @@
-# Rock-Paper-Scissors-ByRosko
-A simple project game within the programming fundamental course at #SoftUni
+## Rock-Paper-Scissors-ByRosko 🪨 🗞️ ✂️
+**A simple project game within the programming fundamental course @SoftUni** 
 
-In this project for the training course at #SoftUni, we had to implement the well-known game Rock-Paper-Scissors.
+**In this project for the training course at #SoftUni, we had to implement the well-known game Rock-Paper-Scissors.**
 
 I used constants for the game choices (rock, paper, scissors) and ANSI color codes for text colorization in the console.
 Then i used a do-while loop to repeatedly play the game until the user decides to quit.
@@ -14,4 +14,4 @@ Depending on the comparison, it increments the respective counters for player wi
 After each round, the game statistics are updated, and the user is presented with the outcome and the current statistics. 
 The user is then asked if they want to play another game. If the answer is "yes," the loop continues; otherwise, the program terminates.
 
-Source code link: https://github.com/roskonenov/RockPaperScissorsByRosko/blob/main/src/RockPaperScissors.java
+#Source code link: [view code](https://github.com/roskonenov/RockPaperScissorsByRosko/blob/main/src/RockPaperScissors.java)
