@@ -5,7 +5,13 @@ public class RockPaperScissors {
     private static final String ROCK = "Rock";
     private static final String PAPER = "Paper";
     private static final String SCISSORS = "Scissors";
-
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String anotherGame = "";
@@ -14,7 +20,7 @@ public class RockPaperScissors {
         int computersWins=0;
         int drawGames=0;
         do {
-            System.out.print("Choose [R]ock, [P]aper, or [S]cissors ");
+            System.out.print(ANSI_YELLOW+"Choose [R]ock, [P]aper, or [S]cissors "+ANSI_RESET);
             String playersChoice = scanner.nextLine();
             if (playersChoice.equalsIgnoreCase("r") || playersChoice.equalsIgnoreCase("rock")) {
                 playersChoice = ROCK;
@@ -23,7 +29,7 @@ public class RockPaperScissors {
             } else if (playersChoice.equalsIgnoreCase("p") || playersChoice.equalsIgnoreCase("paper")) {
                 playersChoice = PAPER;
             } else {
-                System.out.println("Invalid input! Please try again...");
+                System.out.println(ANSI_RED+"Invalid input! Please try again..."+ANSI_RESET);
                 continue;
             }
             Random random = new Random();
@@ -40,49 +46,49 @@ public class RockPaperScissors {
                     computersChoice = PAPER;
                     break;
             }
-            System.out.printf("The computer chose %s,\n", computersChoice);
+            System.out.printf(ANSI_BLUE+"The computer chose %s,\n"+ANSI_RESET, computersChoice);
             switch (playersChoice) {
                 case ROCK:
                     if (computersChoice.equals(ROCK)) {
-                        System.out.println("The game is draw.");
+                        System.out.println(ANSI_GREEN+"The game is draw."+ANSI_RESET);
                         drawGames++;
                     } else if (computersChoice.equals(SCISSORS)) {
-                        System.out.println("You WIN!!! :)");
+                        System.out.println(ANSI_GREEN+"You WIN!!! :)"+ANSI_RESET);
                         playersWins++;
                     } else {
-                        System.out.println("You lose. Sorry!");
+                        System.out.println(ANSI_GREEN+"You lose. Sorry!"+ANSI_RESET);
                         computersWins++;
                     }
                     break;
                 case SCISSORS:
                     if (computersChoice.equals(ROCK)) {
-                        System.out.println("You lose. Sorry!");
+                        System.out.println(ANSI_GREEN+"You lose. Sorry!"+ANSI_RESET);
                         computersWins++;
                     } else if (computersChoice.equals(SCISSORS)) {
-                        System.out.println("The game is draw.");
+                        System.out.println(ANSI_GREEN+"The game is draw."+ANSI_RESET);
                         drawGames++;
                     } else {
-                        System.out.println("You WIN!!! :)");
+                        System.out.println(ANSI_GREEN+"You WIN!!! :)"+ANSI_RESET);
                         playersWins++;
                     }
                     break;
                 case PAPER:
                     if (computersChoice.equals(ROCK)) {
-                        System.out.println("You WIN!!! :)");
+                        System.out.println(ANSI_GREEN+"You WIN!!! :)"+ANSI_RESET);
                         playersWins++;
                     } else if (computersChoice.equals(SCISSORS)) {
-                        System.out.println("You lose. Sorry!");
+                        System.out.println(ANSI_GREEN+"You lose. Sorry!"+ANSI_RESET);
                         computersWins++;
                     } else {
-                        System.out.println("The game is draw.");
+                        System.out.println(ANSI_GREEN+"The game is draw."+ANSI_RESET);
                         drawGames++;
                     }
                     break;
             }
             gamesPlayed++;
-            System.out.printf("  Game stats:\n        Wins: %d\n       Loses: %d\n       Draws: %d\n",playersWins,computersWins,drawGames);
-            System.out.printf("Games played: %d\n",gamesPlayed);
-            System.out.println("Would you like another game? y/n ");
+            System.out.printf(ANSI_PURPLE+"  Game stats:\n        Wins: %d\n       Loses: %d\n       Draws: %d\n"+ANSI_RESET,playersWins,computersWins,drawGames);
+            System.out.printf(ANSI_PURPLE+"Games played: %d\n"+ANSI_RESET,gamesPlayed);
+            System.out.println(ANSI_CYAN+"Would you like another game? y/n "+ANSI_RESET);
             anotherGame = scanner.nextLine();
         } while (anotherGame.equalsIgnoreCase("y"));
     }
