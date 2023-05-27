@@ -1,4 +1,6 @@
 ## Rock-Paper-Scissors-ByRosko 🪨 🗞️ ✂️
+![image](https://github.com/roskonenov/RockPaperScissorsByRosko/assets/133804876/2f8d9de6-5831-4197-b3cb-237a616ee310)
+
 **A simple project game within the programming fundamental course @SoftUni** 
 
 **In this project for the training course at #SoftUni, we had to implement the well-known game Rock-Paper-Scissors.**
