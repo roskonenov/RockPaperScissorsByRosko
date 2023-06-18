@@ -25,4 +25,4 @@ The user is then asked if they want to play another game. If the answer is "yes,
 
 
 #PLAY LIVE DEMO [https://replit.com/@roskonenov/RockPaperScissorsByRosko?v=1]
-https://replit.com/@roskonenov/RockPaperScissorsByRosko
+
