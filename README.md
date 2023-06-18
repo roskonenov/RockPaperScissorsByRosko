@@ -22,3 +22,4 @@ The user is then asked if they want to play another game. If the answer is "yes,
 
 
 #Source code link: [view code](https://github.com/roskonenov/RockPaperScissorsByRosko/blob/main/src/RockPaperScissors.java)
+#PLAY LIVE DEMO [https://replit.com/@roskonenov/RockPaperScissorsByRosko?v=1]
