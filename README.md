@@ -25,5 +25,5 @@ The user is then asked if they want to play another game. If the answer is "yes,
 
 
 ## LIVE DEMO 
-[<img alt= "Play Button"  src= "https://github.com/roskonenov/RockPaperScissorsByRosko/assets/133804876/0a5e1332-20f6-4b8c-b5d0-cb6f0c5ec17f" />](https://replit.com/@roskonenov/RockPaperScissorsByRosko?v=1)
+[<img alt="Play Button" src="https://github.com/roskonenov/RockPaperScissorsByRosko/assets/133804876/0a5e1332-20f6-4b8c-b5d0-cb6f0c5ec17f"/>](https://replit.com/@roskonenov/RockPaperScissorsByRosko?v=1)
 
